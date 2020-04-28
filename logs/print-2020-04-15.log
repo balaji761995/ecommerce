@@ -1,0 +1,6 @@
+20:52:41.520 [main] INFO  resources.DriverUtility - Chrome Driver Initialized successfully
+20:52:45.719 [main] INFO  resources.DriverUtility - Browser Maximized
+20:53:10.487 [main] INFO  resources.DriverUtility - Navigated to the URL successfully
+20:53:12.852 [main] INFO  resources.DriverUtility - Login Page link clicked successfully
+20:53:15.468 [main] INFO  resources.DriverUtility - user name entered successfully
+20:53:15.796 [main] INFO  resources.DriverUtility - password entered successfully
