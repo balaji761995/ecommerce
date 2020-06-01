@@ -40,7 +40,7 @@ public class Listeners implements ITestListener {
 		// TODO Auto-generated method stub
 		testScenario.fail("Test Failed");
 		try {
-			testScenario.addScreenCaptureFromPath(ExtentReporterNG.takeScreenshot(driver),"Test Failed");
+			testScenario.addScreenCaptureFromPath(ExtentReporterNG.takeScreenshot(base.BaseUtil.driver),"Test Failed");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

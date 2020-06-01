@@ -376,3 +376,34 @@
 11:52:18.506 [main] INFO  resources.DriverUtility - clicked on given dress type
 11:52:19.284 [main] INFO  resources.DriverUtility - Dress selected added to cart with given product name and price
 11:52:20.372 [main] INFO  resources.DriverUtility - continue to shopping button clicked
+13:30:14.949 [main] INFO  resources.DriverUtility - Chrome Driver Initialized successfully
+13:30:19.139 [main] INFO  resources.DriverUtility - Browser Maximized
+13:30:41.233 [main] INFO  resources.DriverUtility - Navigated to the URL successfully
+13:30:43.897 [main] INFO  resources.DriverUtility - Login Page link clicked successfully
+13:30:46.060 [main] INFO  resources.DriverUtility - user name entered successfully
+13:30:46.442 [main] INFO  resources.DriverUtility - password entered successfully
+13:30:49.017 [main] INFO  resources.DriverUtility - Clicked on login button
+13:30:49.663 [main] INFO  resources.DriverUtility - Mouse pointer moved to menu list
+13:30:55.744 [main] INFO  resources.DriverUtility - clicked on given dress type
+13:36:11.103 [main] INFO  resources.DriverUtility - Chrome Driver Initialized successfully
+13:36:15.278 [main] INFO  resources.DriverUtility - Browser Maximized
+13:36:59.733 [main] INFO  resources.DriverUtility - Navigated to the URL successfully
+13:37:02.484 [main] INFO  resources.DriverUtility - Login Page link clicked successfully
+13:37:05.754 [main] INFO  resources.DriverUtility - user name entered successfully
+13:37:06.072 [main] INFO  resources.DriverUtility - password entered successfully
+13:37:09.414 [main] INFO  resources.DriverUtility - Clicked on login button
+13:37:09.865 [main] INFO  resources.DriverUtility - Mouse pointer moved to menu list
+13:37:21.591 [main] INFO  resources.DriverUtility - clicked on given dress type
+13:37:22.346 [main] INFO  resources.DriverUtility - Dress selected added to cart with given product name and price
+13:37:23.683 [main] INFO  resources.DriverUtility - continue to shopping button clicked
+13:39:04.310 [main] INFO  resources.DriverUtility - Chrome Driver Initialized successfully
+13:39:08.513 [main] INFO  resources.DriverUtility - Browser Maximized
+13:39:26.670 [main] INFO  resources.DriverUtility - Navigated to the URL successfully
+13:39:28.913 [main] INFO  resources.DriverUtility - Login Page link clicked successfully
+13:39:32.187 [main] INFO  resources.DriverUtility - user name entered successfully
+13:39:32.526 [main] INFO  resources.DriverUtility - password entered successfully
+13:39:35.705 [main] INFO  resources.DriverUtility - Clicked on login button
+13:39:36.139 [main] INFO  resources.DriverUtility - Mouse pointer moved to menu list
+13:39:42.717 [main] INFO  resources.DriverUtility - clicked on given dress type
+13:39:43.594 [main] INFO  resources.DriverUtility - Dress selected added to cart with given product name and price
+13:39:44.658 [main] INFO  resources.DriverUtility - continue to shopping button clicked

@@ -31,18 +31,18 @@ public class DressesToCart {
 	public Actions a;
 	
 	
-	public WebElement addDressToCart(String productName, int price)
+	public WebElement addDressToCart(String productName, String price)
 	{
 		int i,j=1;
 		List<WebElement> dressesName = productList.findElements(By.cssSelector("a[class='product-name']"));
 		List<WebElement> itemPrice = productList.findElements(By.cssSelector("span[class='price product-price']"));
 		WebElement addToCart = null;
-		String convertedPrice = Integer.toString(price);
+		//String convertedPrice = Integer.toString(price);
 		a = new Actions(driver);
 		
 		for(i=0; i<dressesName.size(); i++)
 		{
-			if(dressesName.get(i).getText().contains(productName) && itemPrice.get(i+j).getText().contains(convertedPrice))
+			if(dressesName.get(i).getText().contains(productName) && itemPrice.get(i+j).getText().contains(price))
 			{
 				
 				a.moveToElement(dressesName.get(i)).build().perform();

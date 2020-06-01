@@ -3,6 +3,8 @@ package stepDefinitions;
 import pageObjects.DressesToCart;
 import pageObjects.LandingPage;
 import pageObjects.LoginPage;
+
+import java.util.List;
 import java.util.Properties;
 
 import org.junit.Assert;
@@ -10,6 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import com.aventstack.extentreports.GherkinKeyword;
 import base.BaseUtil;
+import cucumber.api.DataTable;
 import cucumber.api.java.en.*;
 import static resources.DriverUtility.logger;
 
@@ -48,17 +51,19 @@ public class selectDresses extends BaseUtil {
 		logger.info("Clicked on login button");
 	}
 
-	@When("^select all the product type with given value ([^\"]*), dress type ([^\"]*), name ([^\"]*) and price ([^\"]*)$")
-	public void select_all_the_product_type_with_given_value_dress_type_name_and_price(String catagory,
-			String dresstype, String productname, int price) throws Throwable {
+	@When("^select all the product type$")
+	public void select_all_the_product_type(DataTable data) throws Throwable {
 		base.testScenario.createNode(new GherkinKeyword("When"), "select all the product type with given value");
+		
+		List<List<String>> productType = data.raw();
 		act = new Actions(driver);
-		act.moveToElement(landPage.fashionMenuList(catagory)).build().perform();
+		act.moveToElement(landPage.fashionMenuList(productType.get(0).get(0))).build().perform();
 		logger.info("Mouse pointer moved to menu list");
-		landPage.selectDresses(dresstype).click();
+		landPage.selectDresses(productType.get(0).get(1)).click();
 		logger.info("clicked on given dress type");
 		toCart = new DressesToCart(driver);
-		toCart.addDressToCart(productname, price).click();
+		//int price = Integer.parseInt(productType.get(0).get(3));
+		toCart.addDressToCart(productType.get(0).get(2), productType.get(0).get(3)).click();
 		logger.info("Dress selected added to cart with given product name and price");
 
 	}
